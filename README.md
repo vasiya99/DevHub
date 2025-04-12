@@ -15,9 +15,26 @@ This project is built to:
 ---
 
 ## 🧱 Solution Structure
-
-DevHub/ ├── src/ # All production code │ └── Services/ │ └── Users/ │ ├── Users.Api/ # ASP.NET Core Web API (entrypoint) │ ├── Users.Core/ # Domain models, business logic │ ├── Users.Infrastructure/ # Data access, external integrations ├── tests/ # All test projects │ └── Services/ │ └── Users/ │ ├── Users.Api.UnitTests/ # Unit tests for API controllers │ ├── Users.Api.IntegrationTests/ # Integration tests for API endpoints │ ├── Users.Core.UnitTests/ # Unit tests for business logic │ ├── Users.Infrastructure.IntegrationTests/ # Integration tests for DB, APIs ├── DevHub.sln # Solution file └── .gitignore # Standard .NET Git ignore rules
-
+```
+DevHub/
+├── src/                          # All production code
+│   └── Services/
+│       └── Users/
+│           ├── Users.Api/                   # ASP.NET Core Web API (entrypoint)
+│           ├── Users.Core/                  # Domain models, business logic
+│           ├── Users.Infrastructure/        # Data access, external integrations
+├── tests/                        # All test projects
+│   └── Services/
+│       └── Users/
+│           ├── Users.Api.UnitTests/               # Unit tests for API controllers
+│           ├── Users.Api.IntegrationTests/        # Integration tests for API endpoints
+│           ├── Users.Core.UnitTests/              # Unit tests for business logic
+│           ├── Users.Infrastructure.IntegrationTests/  # Integration tests for DB, APIs
+├── dev-setup/                   # Developer setup docs and scripts
+│   └── git-ssh-config.md
+├── DevHub.sln                   # Solution file
+└── .gitignore                   # Standard .NET Git ignore rules
+```
 
 ---
 
@@ -68,6 +85,8 @@ Each service will have its own Dockerfile. Compose setup coming soon!
 ## 📌 Status
 ✅ Skeleton Created
 🔜 Next Step: Add first endpoints to Users.Api, set up Swagger, and connect EF Core with database.
+
+🔐 [Developer Git SSH Setup Guide](dev-setup/git-ssh-config.md)
 
 ## 📄 License
 MIT — feel free to fork, extend, and use it as your own technical portfolio.
