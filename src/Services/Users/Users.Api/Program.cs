@@ -31,7 +31,9 @@ app.MapGet("/weatherforecast", () =>
         .ToArray();
     return forecast;
 })
-.WithName("GetWeatherForecast");
+.WithName("GetWeatherForecast"); 
+
+Console.WriteLine($"Listening on: {Environment.GetEnvironmentVariable("ASPNETCORE_URLS")}");
 
 app.Run();
 
