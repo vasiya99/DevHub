@@ -13,7 +13,8 @@ export default function Projects() {
     {
       title: 'DevHub WebApp',
       description: 'Frontend React app using Vite, TypeScript, and Material UI.',
-      repoUrl: 'https://devhub-api-ejh0h2due8hkdtb0.australiaeast-01.azurewebsites.net',
+      repoUrl: 'https://github.com/vasiya99/DevHub/tree/master/src/Web/devhub-webapp',
+      liveUrl: 'https://devhub-api-ejh0h2due8hkdtb0.australiaeast-01.azurewebsites.net',
     },
     // Add more projects as needed
   ];
