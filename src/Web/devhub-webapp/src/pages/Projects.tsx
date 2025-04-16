@@ -1,6 +1,6 @@
 // src/pages/Projects.tsx
 import ProjectCard from '../components/ProjectCard';
-import { Grid } from '@mui/material';
+import Grid from '@mui/material/Grid';
 
 export default function Projects() {
   const projects = [
