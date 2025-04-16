@@ -1,4 +1,3 @@
-// src/pages/Projects.tsx
 import ProjectCard from '../components/ProjectCard';
 import Grid from '@mui/material/Grid';
 
@@ -22,9 +21,9 @@ export default function Projects() {
   return (
     <div>
       <h1>My Projects</h1>
-      <Grid container spacing={2}>
+      <Grid container spacing={2}> {/* Outer Grid container */}
         {projects.map((p, i) => (
-          <Grid item key={i}>
+          <Grid item key={i} xs={12} sm={6} md={4}> {/* Inner Grid item */}
             <ProjectCard {...p} />
           </Grid>
         ))}
